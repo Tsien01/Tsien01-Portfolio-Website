@@ -5,10 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, rgba(45,44,52,1) 10%, rgba(112,79,80,1) 30%, rgba(221,149,45,1) 60%);
+  background-image: url("../public/Cosmic_Cliffs_in_Carina_NIRCam.png");
+  background-size: auto 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

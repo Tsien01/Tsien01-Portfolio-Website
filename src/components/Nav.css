@@ -1,39 +1,56 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navButton {
+    position: absolute; 
     border: 1px solid black; 
+    border-radius: 0 10px 10px 0;
     width: 55px; 
     height: 550px; 
-    background-color: white;
-    color: #5fa565; 
+    background-color: rgb(16 170 229 / 15%);
+    color: white; 
+    text-shadow: 1px 1px 10px white;
     text-align: center;
     font-size: 50px; 
     font-style: italic;
     writing-mode: vertical-rl; 
     text-orientation: upright;
+     
 }
 
 .navButton:hover {
-    background-color: #2d2c34;
+    background-color: rgb(16 170 229 / 50%);
 }
 
 .navButton:hover .navBar{
     transform: translateX(calc(10vw + 60px)); 
 }
 
+li:hover {
+    background-color: rgb(16 170 229 / 50%);
+}
+
 .navBar {
+    position: absolute; 
     display: flex;
     flex-direction: column;
     width: 10vw; 
     transform: translateX(-5vw);
     transition: transform 0.3s linear; 
     writing-mode: horizontal-tb;
+    color: white;
+    text-shadow: 1px 1px 10px white; 
 }
 
 ul {
     list-style: none;
     padding-left: 0px; 
-    border: 1px solid black;
 }
 
 li {
     border: 1px solid black;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(16 170 229 / 15%);
 }
