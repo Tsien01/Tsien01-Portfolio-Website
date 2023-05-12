@@ -1,0 +1,39 @@
+.navButton {
+    border: 1px solid black; 
+    width: 55px; 
+    height: 550px; 
+    background-color: white;
+    color: #5fa565; 
+    text-align: center;
+    font-size: 50px; 
+    font-style: italic;
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+}
+
+.navButton:hover {
+    background-color: #2d2c34;
+}
+
+.navButton:hover .navBar{
+    transform: translateX(calc(10vw + 60px)); 
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    width: 10vw; 
+    transform: translateX(-5vw);
+    transition: transform 0.3s linear; 
+    writing-mode: horizontal-tb;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px; 
+    border: 1px solid black;
+}
+
+li {
+    border: 1px solid black;
+}
