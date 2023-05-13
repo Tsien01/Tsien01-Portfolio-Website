@@ -2,7 +2,7 @@ import "./ThreeDisplay.css";
 
 import BackgroundMesh from "./BackgroundMesh";
 
-import { Canvas, extend } from "@react-three/fiber"; 
+import { Canvas } from "@react-three/fiber"; 
 import { OrbitControls } from "@react-three/drei"; 
 
 export default function ThreeDisplay (props) {
@@ -27,7 +27,7 @@ export default function ThreeDisplay (props) {
             {/* <color attach="background" args={["black"]}></color> */}
             <ambientLight intensity={0.1}></ambientLight>
             <pointLight color={"#0xffffff"} position={[0, 10, 10]} /> 
-            <BackgroundMesh coordinates={[0, 0, 0]} />
+            <BackgroundMesh coordinates={[4, -2, 0]} />
             <OrbitControls />
           </Canvas>
         </div>
