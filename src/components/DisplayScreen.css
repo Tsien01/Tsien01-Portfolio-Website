@@ -1,9 +1,17 @@
-
+.title {
+    position: absolute;
+    color: midnightblue;
+    text-shadow: 1px 1px 10px white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+    top: 0; 
+    text-align: center;
+}
 
 .display {
     width: 100%; 
     height: 100%; 
-    border: 1px solid black; 
     border-radius: 10px;
     color: black;
     text-shadow: 1px 1px 10px white; 
@@ -11,12 +19,11 @@
     font-weight: bolder;
     font-size: 2vw;
     text-align: center;
-    background-image: url("https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80");
     filter: sepia(60%); 
-    background-size: auto 200%; 
+    background-size: auto 100%; 
     background-position: center;
     opacity: 0.98;
-    animation: pan-image 60s linear infinite;
+    animation: pan-image 60s linear infinite alternate;
     overflow: hidden; 
     border-radius: inherit;
 }
@@ -26,14 +33,21 @@
     height: 100%; 
     width: 100%;
     background-color: rgb(16 170 229 / 25%); 
+    border-radius: 10px;
+}
+
+.screen:hover {
+    background-color: rgb(16 170 229 / 55%);
 }
 
 @keyframes pan-image {
-    0% {background-position: 0% 0%;}
-    25% {background-position: 0% 100%;}
-    50% {background-position: 100% 100%;}
-    75% {background-position: 100% 0%;}
-    100% {background-position: 0% 0%;}
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 0%;
+    }
 }
 
 span {
