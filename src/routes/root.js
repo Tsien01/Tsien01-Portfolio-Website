@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Nav from "../components/Nav";
 import ThreeDisplay from "../components/ThreeDisplay";
 import "./root.css"; 
 import DisplayScreen from "../components/DisplayScreen";
+import { Link } from "react-router-dom";
 
 
 export default function Root() {
@@ -16,12 +16,17 @@ export default function Root() {
   return (
       <div id="page">
         <h1>Home</h1>
-        <button className="threeToggleControl" onClick={handleOnClick}>{threeEnabled ? "Disable 3d Animations" : "Enable 3d Animations"}</button>
-        <Nav></Nav>
+        <button className="threeToggleControl" onClick={handleOnClick}>{threeEnabled ? "Disable 3D" : "Enable 3D"}</button>
         <div className="screenContainer">
-          <DisplayScreen displayText={"About"}></DisplayScreen>
-          <DisplayScreen displayText={"Start?"}></DisplayScreen>
-          <DisplayScreen displayText={"Projects"}></DisplayScreen>
+          <Link to={"/About"} className="link">
+            <DisplayScreen displayText={"About"}></DisplayScreen>
+          </Link>
+          <Link to={"/"} className="link">
+            <DisplayScreen displayText={"Start?"}></DisplayScreen>
+          </Link>
+          <Link to={"/Projects"} className="link">
+            <DisplayScreen displayText={"Projects"}></DisplayScreen>
+          </Link>
         </div>
         {threeEnabled ? <ThreeDisplay></ThreeDisplay> : <div />}
       </div>
