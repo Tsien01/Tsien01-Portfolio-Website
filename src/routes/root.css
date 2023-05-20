@@ -3,6 +3,13 @@
     width: 100vw; 
 }
 
+.title {
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    top: 20%;
+}
+
 .threeToggleControl {
     position: absolute; 
     top: 0; 
