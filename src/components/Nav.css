@@ -17,7 +17,19 @@ a, a:hover, a:focus, a:active {
     font-style: italic;
     writing-mode: vertical-rl; 
     text-orientation: upright;
-     
+    animation: shadow-flicker 1s infinite alternate; 
+}
+
+@keyframes shadow-flicker {
+    0% {
+        box-shadow: 1px 1px 25px pink;
+    }
+    50% {
+        box-shadow: 1px 1px 10px pink; 
+    }
+    100% {
+        box-shadow: 1px 1px 50px pink;
+    }
 }
 
 .navButton:hover {
@@ -53,4 +65,5 @@ li {
     border: 1px solid black;
     border-radius: 0 10px 10px 0;
     background-color: rgb(16 170 229 / 15%);
+    animation: shadow-flicker 1s infinite alternate; 
 }

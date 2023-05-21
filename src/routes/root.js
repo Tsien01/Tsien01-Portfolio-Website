@@ -48,14 +48,14 @@ export default function Root() {
         <button className="threeToggleControl" onClick={handleOnClick}>{threeEnabled ? "Disable 3D" : "Enable 3D"}</button>
         <div className="screenContainer">
           <Link to={"/About"} className="link">
-            <DisplayScreen displayText={"ABOUT"} imageURL={leftBackgroundImg} useTextScramble={true}></DisplayScreen>
+            <DisplayScreen displayText={"ABOUT"} imageURL={leftBackgroundImg}></DisplayScreen>
           </Link>
           <Link to={"/"} className="link">
             <h1 className="title">{title}</h1>
-            <DisplayScreen displayText={"START?"} imageURL={centerBackgroundImg} useTextScramble={true}></DisplayScreen>
+            <DisplayScreen displayText={"START?"} imageURL={centerBackgroundImg}></DisplayScreen>
           </Link>
           <Link to={"/Projects"} className="link">
-            <DisplayScreen displayText={"PROJECTS"} imageURL={rightBackgroundImg} useTextScramble={true}></DisplayScreen>
+            <DisplayScreen displayText={"PROJECTS"} imageURL={rightBackgroundImg}></DisplayScreen>
           </Link>
         </div>
         {threeEnabled ? <ThreeDisplay></ThreeDisplay> : <div />}

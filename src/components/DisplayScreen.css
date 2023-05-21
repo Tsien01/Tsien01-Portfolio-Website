@@ -28,6 +28,15 @@
     border-radius: inherit;
 }
 
+@keyframes pan-image {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 0%;
+    }
+}
 
 .screen {
     height: 100%; 
@@ -40,15 +49,6 @@
     background-color: rgb(16 170 229 / 55%);
 }
 
-@keyframes pan-image {
-    from {
-        background-position: 0% 0%;
-    }
-
-    to {
-        background-position: 100% 0%;
-    }
-}
 
 span {
     position: relative;

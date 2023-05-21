@@ -47,4 +47,17 @@
     width: 30%; 
     height: 90%;
     border-radius: 10px;
+    animation: shadow-flicker 1s infinite alternate; 
+}
+
+@keyframes shadow-flicker {
+    0% {
+        box-shadow: 1px 1px 25px white;
+    }
+    50% {
+        box-shadow: 1px 1px 10px white; 
+    }
+    100% {
+        box-shadow: 1px 1px 50px white;
+    }
 }
